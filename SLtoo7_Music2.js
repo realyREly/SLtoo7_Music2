@@ -9,7 +9,7 @@ const queue = new Map();
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  client.user.setGame('Server_Sltoo7','https://www.twitch.tv');
+  client.user.setGame('NOthing','https://www.twitch.tv');
   console.log('---------------');
   console.log(' Bot Is Online')
   console.log('---------------')
