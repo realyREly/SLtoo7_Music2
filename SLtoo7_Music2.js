@@ -15,7 +15,7 @@ client.on('ready', () => {
   console.log('---------------')
 });
 
-const prefix = "2"
+const prefix = "$$"
 client.on('message', async msg => {
 	if (msg.author.bot) return undefined;
 	
@@ -255,7 +255,7 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 
 
 client.on('message', function(message) {
-	const myID = "459013113396723742";
+	const myID = "466666523445166089";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
