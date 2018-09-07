@@ -9,7 +9,6 @@ const queue = new Map();
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  client.user.setGame('Noblle is heяø⚡️','https://www.twitch.tv/xahzrx');
   console.log('---------------');
   console.log(' Bot Is Online')
   console.log('---------------')
@@ -268,7 +267,7 @@ client.on('message', function(message) {
     } else if(message.content.startsWith(prefix + "stream")) {
 		        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
-        client.user.setGame(args , 'https://twitch.tv/6xlez1');
+        client.user.setGame(args , 'https://www.twitch.tv/xahzrx');
         message.channel.send(':white_check_mark: Done!').then(msg => {
            msg.delete(5000);
           message.delete(5000);
